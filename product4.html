@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Kelvis</h1>
+        <div class="list">
+              <p class="navbar-link"><a href="index.html">Home</a></p>
+              <p class="navbar-link"><a href="collection.html">Collections</a></p>
+              <p class="navbar-link"><a href="contact.html">Contact us</a></p>
+              <a href="#"><i class="fa-solid fa-cart-shopping" onclick="window.location.href='cart.html';"></i></a>
+         </div>
+         <div class="menu-icon" >
+            <i class="fa-solid fa-bars" onclick="openslide()"></i>
+         </div>  
+    </nav>
+
+    <div class="side-symbol">
+        <p class="add" onclick="closeslide()"> 
+           <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-list">
+            <p class="sidenavbar-link"><a href="index.html">Home</a></p>
+            <p class="sidenavbar-link"><a href="collection.html">Collections</a></p>
+            <p class="sidenavbar-link"><a href="contact.html">Contact us</a></p>
+        </div>
+    </div>
+
+    <section class="container-products">
+            <div class="products">
+                <img src="./fcc3fc5202eb768d906b123ae5035b1d.jpg" id="main-img" alt="" width="100%">
+            
+            <div class="choose-product">
+                <div class="small-img">
+                    <img src="./fcc3fc5202eb768d906b123ae5035b1d.jpg" class="smallest-img" alt="" width="100%">
+                </div>
+                <div class="small-img">
+                    <img src="./6725d9cd3c98732a3377dc3144947ed3.jpg" class="smallest-img" alt="" width="100%">
+                </div>
+                <div class="small-img">
+                    <img src="./e8703163e1b1b83906a88beed55f1bdf.jpg" class="smallest-img" alt="" width="100%">
+                </div>
+                <div class="small-img">
+                    <img src="./42498a97a3570e9dc6037d0609b917dc.jpg" class="smallest-img" alt="" width="100%">
+                </div>
+            </div>
+            </div>
+            <div class="product-text">
+                <h6>Shop/Formal Pants</h6>
+                <h4>Highlander</h4>
+                <p>Men's Stretchable Formal Pants | Trousers </p>
+                <h2>$139.00</h2>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>L</option>
+                    <option>M</option>
+                    <option>S</option>
+                </select>
+                <input type="number" value="1">
+                <button onclick="addToCart()">Add to cart</button>
+                <h4>Product Details</h4>
+                <table class="table">
+                    <tr>
+                        <td><strong>Material type</strong></td>
+                        <td>Polyester</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Style</strong></td>
+                        <td>Classic</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fit type</strong></td>
+                        <td>Regular Fit</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Closure type</strong></td>
+                        <td>Zipper</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Care instructions</strong></td>
+                        <td>Machine Wash</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Length</strong></td>
+                        <td>Standard Length</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Country of Origin</strong></td>
+                        <td>India</td>
+                    </tr>
+            </table>
+            
+            <div class="shop-icon">
+                <div onclick="alert('Keep the item in its original condition and packaging along with MRP tag and accessories for a successful pick-up.')">
+                    <i class="fa-solid fa-arrow-right-arrow-left" id="icon-style"></i>
+                    <h6>10 days Return and Exchange</h6>
+                </div>
+                <div onclick="alert('Pay on Delivery (POD) includes Cash on Delivery (COD) as well as Debit card/Credit card/Net banking payments at your doorstep. Cash/Pay on Delivery fee may apply to cover handling costs.')">
+                    <i class="fa-solid fa-money-check-dollar" id="icon-style"></i>
+                    <h6>Cash Pay on Delivery</h6>
+                </div>
+                <div onclick="alert('The product is eligible for Free delivery.')"> 
+                    <i class="fa-solid fa-truck" id="icon-style"></i>
+                    <h6>Free Delivery</h6>
+                </div>
+                <div onclick="alert('Top Brand indicates high quality, trusted brands on Amazon aggregated basis verified ratings, returns/refunds and recent order history at brand level.')">
+                    <i class="fa-solid fa-award" id="icon-style"></i>
+                    <h6>Top Brands</h6>
+                </div>
+                <div onclick="alert('We work hard to protect your security and privacy. Our payment security system encrypts your information during transmission. We don’t share your credit card details with third-party sellers, and we don’t sell your information to others.')"> 
+                    <i class="fa-solid fa-lock" id="icon-style"></i>
+                    <h6>Secure Transaction</h6>
+                </div>
+            </div>
+            <h4>About this item</h4>
+            <p>Permanent crease that remains sharp and intact, even after multiple uses
+                Enjoy effortless comfort all day, with wrinkle-resistant fabric
+                Premium fabric of polyester, wool, viscose and elastane blend
+                Designed with a modern, tapered silhouette for a sharp and polished look
+                Gripper at the inner waistband to keep your shirt securely tucked in place
+            </p>
+            </div>
+            
+        <div class="pro">
+            <h2>Feature Products</h2>
+        
+        <div class="collections">   
+            <div class="Dress-collection" onclick="window.location.href='product3.html';">
+                <img src="./dcef5e232cd936cbd9ab81447e749607.jpg" alt="">
+                <div class="text">
+                  <h5>Lymio</h5>
+                  <p>Straight Fit Jeans For Men || Men Jeans Pants || Denim Jeans</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+             
+            </div>
+            <div class="Dress-collection" onclick="window.location.href='product2.html';">
+                <img src="./e04644aca07b186778076e702b9654ae.jpg" alt="">
+                <div class="text">
+                  <h5>Van Heusen</h5>
+                  <p>Printed Shirts for Men Half Sleeve Casual Regular Fit</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+              
+            </div>
+            <div class="Dress-collection" onclick="window.location.href='product8.html';">
+                <img src="./ab6cb9b5727f2b886f6214062c822ece.jpg" alt="">
+                <div class="text">
+                  <h5>Roadster</h5>
+                  <p>Benny Brooks Men's Black Graphic Printed Oversized Half Sleeve T-Shirt</p>
+                  <p></p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                
+            </div>
+            <div class="Dress-collection" onclick="window.location.href='product1.html';">
+                <img src="./79589d73d9fcbae4266ca29998d16c7f.jpg" alt="">
+                <div class="text">
+                  <h5>Louis Philippe</h5>
+                  <p>Casual Regular Fit Shirt for Men|| Regular Fit</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="foot">
+        <div class="col">
+            <h4>Contact</h4>
+            <p> <strong>Address:</strong> 563 Wellington Road, Street 32, San Franciso</p>
+            <p><strong>Phone:</strong>+01 2223 784 / (+91) 01 2345 6745</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="footer-icon">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>www.@Kelvis.com</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="add_cart.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
